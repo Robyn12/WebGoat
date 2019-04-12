@@ -3,7 +3,6 @@ import requests
 import json
 
 charset="abcdefghijklmnopqrstuvwxyz0123456789"
-fakeCharset = "abtc"
 def main():
   passu = ""
   for i in range(1,30):
