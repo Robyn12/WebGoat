@@ -23,7 +23,6 @@ class ThreadWithReturnValue(Thread):
 
 charset="abcdefghijklmnopqrstuvwxyz0123456789"
 
-results = [None] * 30
 
 global passu
 
@@ -35,7 +34,7 @@ def main():
   threads = []
   tmp = ""
   passu = ""
-  for i in range(1,30):
+  for i in range(1,24):
     tmp = passu
     for c in charset:
       threads.append(ThreadWithReturnValue(target=doRequest, args=(i, c)))
